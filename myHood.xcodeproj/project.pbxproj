@@ -13,6 +13,8 @@
 		B28111591C04211900FF4B43 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B28111581C04211900FF4B43 /* Assets.xcassets */; };
 		B281115C1C04211900FF4B43 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B281115A1C04211900FF4B43 /* LaunchScreen.storyboard */; };
 		B28111671C04211900FF4B43 /* myHoodTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28111661C04211900FF4B43 /* myHoodTests.swift */; };
+		B28111731C04236C00FF4B43 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28111721C04236C00FF4B43 /* Post.swift */; };
+		B28111781C042EAF00FF4B43 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28111771C042EAF00FF4B43 /* PostCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,8 @@
 		B28111621C04211900FF4B43 /* myHoodTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = myHoodTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B28111661C04211900FF4B43 /* myHoodTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myHoodTests.swift; sourceTree = "<group>"; };
 		B28111681C04211900FF4B43 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B28111721C04236C00FF4B43 /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		B28111771C042EAF00FF4B43 /* PostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +87,8 @@
 				B28111581C04211900FF4B43 /* Assets.xcassets */,
 				B281115A1C04211900FF4B43 /* LaunchScreen.storyboard */,
 				B281115D1C04211900FF4B43 /* Info.plist */,
+				B28111761C042E7100FF4B43 /* View */,
+				B28111711C04234700FF4B43 /* Model */,
 			);
 			path = myHood;
 			sourceTree = "<group>";
@@ -94,6 +100,22 @@
 				B28111681C04211900FF4B43 /* Info.plist */,
 			);
 			path = myHoodTests;
+			sourceTree = "<group>";
+		};
+		B28111711C04234700FF4B43 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B28111721C04236C00FF4B43 /* Post.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		B28111761C042E7100FF4B43 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B28111771C042EAF00FF4B43 /* PostCell.swift */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -196,8 +218,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B28111731C04236C00FF4B43 /* Post.swift in Sources */,
 				B28111541C04211900FF4B43 /* ViewController.swift in Sources */,
 				B28111521C04211900FF4B43 /* AppDelegate.swift in Sources */,
+				B28111781C042EAF00FF4B43 /* PostCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
