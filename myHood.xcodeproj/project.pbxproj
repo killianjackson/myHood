@@ -15,6 +15,8 @@
 		B28111671C04211900FF4B43 /* myHoodTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28111661C04211900FF4B43 /* myHoodTests.swift */; };
 		B28111731C04236C00FF4B43 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28111721C04236C00FF4B43 /* Post.swift */; };
 		B28111781C042EAF00FF4B43 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28111771C042EAF00FF4B43 /* PostCell.swift */; };
+		B2858C0E1C083FF7002E666D /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2858C0D1C083FF7002E666D /* DataService.swift */; };
+		B291FFC61C05D95600E2CB8B /* AddPostVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B291FFC51C05D95600E2CB8B /* AddPostVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,8 @@
 		B28111681C04211900FF4B43 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B28111721C04236C00FF4B43 /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		B28111771C042EAF00FF4B43 /* PostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
+		B2858C0D1C083FF7002E666D /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		B291FFC51C05D95600E2CB8B /* AddPostVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddPostVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,11 +85,10 @@
 		B28111501C04211900FF4B43 /* myHood */ = {
 			isa = PBXGroup;
 			children = (
+				B2858C0C1C083FD6002E666D /* Services */,
+				B291FFC41C05D90500E2CB8B /* Controller */,
 				B28111511C04211900FF4B43 /* AppDelegate.swift */,
-				B28111531C04211900FF4B43 /* ViewController.swift */,
-				B28111551C04211900FF4B43 /* Main.storyboard */,
 				B28111581C04211900FF4B43 /* Assets.xcassets */,
-				B281115A1C04211900FF4B43 /* LaunchScreen.storyboard */,
 				B281115D1C04211900FF4B43 /* Info.plist */,
 				B28111761C042E7100FF4B43 /* View */,
 				B28111711C04234700FF4B43 /* Model */,
@@ -113,9 +116,28 @@
 		B28111761C042E7100FF4B43 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				B281115A1C04211900FF4B43 /* LaunchScreen.storyboard */,
+				B28111551C04211900FF4B43 /* Main.storyboard */,
 				B28111771C042EAF00FF4B43 /* PostCell.swift */,
 			);
 			name = View;
+			sourceTree = "<group>";
+		};
+		B2858C0C1C083FD6002E666D /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				B2858C0D1C083FF7002E666D /* DataService.swift */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
+		B291FFC41C05D90500E2CB8B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B28111531C04211900FF4B43 /* ViewController.swift */,
+				B291FFC51C05D95600E2CB8B /* AddPostVC.swift */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -220,6 +242,8 @@
 			files = (
 				B28111731C04236C00FF4B43 /* Post.swift in Sources */,
 				B28111541C04211900FF4B43 /* ViewController.swift in Sources */,
+				B291FFC61C05D95600E2CB8B /* AddPostVC.swift in Sources */,
+				B2858C0E1C083FF7002E666D /* DataService.swift in Sources */,
 				B28111521C04211900FF4B43 /* AppDelegate.swift in Sources */,
 				B28111781C042EAF00FF4B43 /* PostCell.swift in Sources */,
 			);
@@ -409,6 +433,7 @@
 				B281116D1C04211900FF4B43 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B281116E1C04211900FF4B43 /* Build configuration list for PBXNativeTarget "myHoodTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +442,7 @@
 				B28111701C04211900FF4B43 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
